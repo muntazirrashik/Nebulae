@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    height: 100vh; /* Full height */
+    background-color: #1E1E1E; /* Dark gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Font family */
+}
+
+.chat-container {
+    width: 500px; /* Width of the chat container */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    background-color: #2C2C2C; /* Darker background for chat */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #1E1E1E; /* Background color for header */
+    padding: 10px; /* Padding for header */
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for title */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Match font with ChatGPT */
+}
+
+.chat-window {
+    height: 400px; /* Height of the chat window */
+    padding: 20px; /* Padding inside the chat window */
+    overflow-y: auto; /* Scrollable chat area */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #444 #1E1E1E; /* Firefox scrollbar color */
+}
+
+.chat-window::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: #1E1E1E; /* Track color */
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #444; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between messages */
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%; /* Limit message width */
+    word-wrap: break-word; /* Word wrapping */
+}
+
+.bot-message {
+    background-color: #444; /* Background for bot messages */
+    align-self: flex-start; /* Align to the left */
+}
+
+.user-message {
+    background-color: #444; /* Match the same background for user messages */
+    color: white; /* White text for user messages */
+    align-self: flex-end; /* Align to the right */
+}
+
+.input-area {
+    display: flex; /* Flexbox for input area */
+    padding: 10px; /* Padding for input area */
+    background-color: #3C3C3C; /* Input area background */
+    border-top: 1px solid #444; /* Top border for separation */
+}
+
+.input-field {
+    width: 100%;
+    height: 40px; /* Height for input field */
+    border: none;
+    padding: 10px; /* Padding inside input field */
+    background-color: #444; /* Darker input background */
+    color: #ffffff; /* White text */
+    border-radius: 20px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline */
+}
+
+.input-field::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.submit-button {
+    background-color: transparent; /* Make background transparent */
+    border: none; /* No border */
+    color: white; /* Change icon color to white */
+    cursor: pointer;
+    padding: 10px; /* Padding for button */
+    margin-left: 10px; /* Space between input and button */
+    border-radius: 50%; /* Round button */
+    font-size: 20px; /* Adjust font size for the icon */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.submit-button:hover {
+    color: #ccc; /* Change hover color to a lighter shade */
+}
+
+.submit-button i {
+    pointer-events: none; /* Prevent pointer events on the icon */
+}
