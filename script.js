@@ -1,4 +1,4 @@
-<script>
+
     // Select elements from the DOM
     const chatWindow = document.querySelector('.chat-window');
     const inputField = document.querySelector('.input-field');
@@ -71,4 +71,3 @@
             submitButton.click(); // Trigger submit button click
         }
     });
-</script>
